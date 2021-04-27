@@ -1,0 +1,150 @@
+
+header{
+    background-color:rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    display: block;
+}
+p{
+  font-size: 50px;
+  content: "";
+  clear: both;
+  display: block;
+  text-align: center;
+}
+
+img {
+  text-align: center;
+}
+
+
+
+
+body{
+  background-color: #b573c6;
+}
+
+h1 {
+    background-color:  black; 
+    text-align:center;
+    font-size: 60px;
+    font-family: "Trirong", serif;
+}
+h2 {
+  background-color:  #620e46; 
+    text-align:center;
+    font-size: 30px;
+    font-family: "Trirong", serif;
+    color: rgb(0, 0, 0);
+
+}
+h3{
+  background-color:  #e734c0; 
+  text-align:center;
+  font-size: 30px;
+  font-family: "Trirong", serif;
+  color: white;
+
+}
+nav {
+    padding: 3em;
+    font-family: "Trirong", serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  nav ul {
+    font-size: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: block;
+    background: #b523c2;
+    color: black;
+    
+  }
+  nav li a {
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: .5em 1em;
+    color: white;
+  }
+  nav li a:hover {
+    background: rgb(255, 255, 255);
+    color: white;
+  }
+  
+  @media screen and (min-width: 480px) {
+    nav ul {
+      display: flex;
+     justify-content:space-between;
+    }
+  }
+  .galeria {
+    height: calc( var(--h) + 3em);
+    width: var(--w);
+    margin:1em auto;
+    border: 1px solid #e032bb;
+    position: relative;  
+  }
+.logo img{
+    position: relative;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 3s;
+}
+.galeria img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 3s;
+}
+
+.galeria input[type=radio] {
+  position: relative;
+  bottom: calc(-1 * var(--h) - 1.5em);
+  left: .5em;
+}
+
+.galeria input[type=radio]:nth-of-type(1):checked ~ img:nth-of-type(1) {
+  opacity: 1;
+}
+
+.galeria input[type=radio]:nth-of-type(2):checked ~ img:nth-of-type(2) {
+  opacity: 1;
+}
+
+.galeria input[type=radio]:nth-of-type(3):checked ~ img:nth-of-type(3) {
+  opacity: 1;
+}
+
+.galeria input[type=radio]:nth-of-type(4):checked ~ img:nth-of-type(4) {
+  opacity: 1;
+}
+table { 
+  text-align: center;
+  color: white;
+  display: table;
+  border-collapse: separate;
+  border-spacing: 0px;
+  border: 1px solid white;
+  border-color: rgb(194, 189, 189);
+  font-family:"Trirong", serif;
+}
+tr{
+  color: black;
+  text-align: center;
+}
+tr a:hover{
+  background: black;
+  color: white;
+  text-decoration: none;
+}
+footer{
+  text-align: center;
+}
+a{
+  text-align: center;
+}
